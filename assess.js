@@ -66,16 +66,16 @@ checkoutBook({title :`Crime and Punishment`})
 //book's isAvailable property to true. If the book is not found in the library, the function
 //should return a message indicating that the book does not belong to the library.
 function returnBook(title){
-    for (x in books){
-     const w =books.map((functionx=> x.isAvailable)
+    
+     const w =books.map(function (title){
+     for (x in books){
       if(isAvailable = true){
         console.log(`The book is available`)
      }
       else(
         console.log(`The book is not available`)
-     )
-    
-)}
-}
+     )}})
+      }
+
 
 returnBook({title:`Homes`})
