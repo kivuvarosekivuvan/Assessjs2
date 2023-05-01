@@ -32,15 +32,14 @@ console.log(getBooksByAuthor())
 //publicationYear, and isAvailable).
 
 function addNewBook(book){
-    let
-    for(book in books){
-        books[title]=book.push()
-        books[author].push()
-        books[publicationYear].push()
-        books[isAvailable].push()
-    
-    }
-    return books
+   const prop=[`title`, `author`, `publicationYear`, `isAvailable`]
+   const hasAllprop=prop.every(prop =>book.hasOwnProperty(prop))
+   if (hasAllprop){
+    books.push(book)
+   }
+   else(
+    console.log(`Error: book is missing properties`)
+   )
 }
 const newBook =[{title:`River and source`, author:`Kigwendu`, publicationYear:`2002`,isAvailable:`False` }]
 console.log(addNewBook(newBook))
